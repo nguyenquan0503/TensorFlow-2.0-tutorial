@@ -72,5 +72,9 @@ z2
 z3 = tf.range(limit)
 z3
 
+# ==================== random ====================
+# tf.random.normal(shape, mean, deviation)
+r1 = tf.random.normal([3, 4], 0.0, 0.5)
+r1
 
 
