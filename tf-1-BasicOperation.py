@@ -77,4 +77,18 @@ z3
 r1 = tf.random.normal([3, 4], 0.0, 0.5)
 r1
 
+# ==================== Matrix operation ====================
+a1 = tf.constant([[2., 3.], [4., 1.]])
+a2 = tf.constant([[2., 2.], [2., 2.]])
+
+tf.add(a1, a2)
+tf.subtract(a1, a2)
+
+tf.tensordot(a1, a2, 0) # outer product
+tf.tensordot(a1, a2, 1) # matrix multiply
+tf.multiply(a1, a2) # element-wise 
+tf.divide(a1, a2)
+
+tf.transpose(a1)
+tf.linalg.inv(a1)
 
